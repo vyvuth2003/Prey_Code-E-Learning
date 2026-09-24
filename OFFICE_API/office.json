@@ -1,0 +1,40 @@
+{
+    "office": [
+        {
+            "id": 1,
+            "images": "../images/word.png",
+            "title": "Microsoft Word",
+            "description": "Microsoft Word is a word processing application."
+        },
+        {
+            "id": 2,
+            "images": "../images/excel.png",
+            "title": "Microsoft Excel",
+            "description": "Microsoft Excel is a spreadsheet application."
+        },
+        {
+            "id": 3,
+            "images": "../images/powerpoint.png",
+            "title": "Microsoft PowerPoint",
+            "description": "Microsoft PowerPoint is a presentation application."
+        },
+        {
+            "id": 4,
+            "images": "../images/typing.png",
+            "title": "Typing computer",
+            "description": "A regular desktop or laptop using word processing software (e.g., Microsoft Word, Google Docs) paired with a tactile keyboard.."
+        },
+        {
+            "id": 5,
+            "images": "../images/photoshop.png",
+            "title": "adobe photoshop",
+            "description": "Tools like Content-Aware Fill, Healing Brushes, and Clone Stamp allow users to repair flaws, remove unwanted background elements, and correct colors."
+        },
+        {
+            "id": 6,
+            "images": "../images/illustrator.png",
+            "title": "adobe ilustrator",
+            "description": "Crafting scalable company logos, icons, and brand assets."
+        }
+    ]
+}
