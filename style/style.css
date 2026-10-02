@@ -8,12 +8,3 @@
 .hanuman-font{
   font-family: "Hanuman", serif;
 }
-
-
-/* Ensure images fill 250x250 without stretching */
-.small-carousel .carousel-item img {
-  width: 1200px !important;
-  height: 800px !important;
-  object-fit: cover;
-}
-

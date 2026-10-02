@@ -6,13 +6,14 @@
     <link rel="icon" href="../images/logo_1.png">
     <title>PreyCode E-Learning</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
  <div class=" container-fluid">
     <!-- menu bar -->
-    <div class="container-fluid bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary sticky-top bg-body-tertiary d-none d-lg-block">
         <div class="Menu-Bar d-block d-md-flex justify-content-between align-items-center ">
             <div class="logo">
                 <img src="../images/logoMenu.jpg"  alt="PreyCode Logo" width="100" height="100" class="logo-Menu  rounded rounded-circle rounded-3 mt-2">
@@ -20,10 +21,10 @@
             <div class="nav-link">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Lesson</a>
+                        <a class="nav-link" href="/Frontend/Components/lesson.html">Lesson</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Exercises</a>
@@ -41,9 +42,54 @@
             </div>
         </div>
     </div>
+
+    <!-- navbar responsive  -->
+    <nav class="navbar navbar-dark  bg-dark bg-opacity-75 fixed-top d-lg-none d-md-block mb-0">
+  <div class="container-fluid">
+    <img src="../images/logoMenu.jpg"  alt="PreyCode Logo" width="60" height="50" class="logo-Menu  rounded rounded-circle rounded-3">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">PreyCode E-Learning</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Frontend/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Frontend/Components/lesson.html">Lessons</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Exercise</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item" href="#">Contact US</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+  &nbsp;&nbsp;&nbsp;
+
     <!-- component -->
      <!-- carousel image -->
-      <div class=" container-fluid">
+      <div class=" container-fluid d-none d-lg-block ">
         <div id="carouselExampleDark" class="carousel carousel-dark slide small-carousel mt-5" data-bs-ride="carousel">
     <!-- Indicators -->
     <div class="carousel-indicators">
@@ -53,7 +99,7 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <but ton type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
 
         
@@ -63,7 +109,7 @@
     <div class="carousel-inner">
         <!-- Slide 1: HTML -->
         <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../images/html.png" class="d-block" alt="html not found">
+            <img src="../images/html.png" class="d-block" width="100%" height="100%" alt="html not found">
             <div class="carousel-caption d-block text-warning">
                 <h5>HTML Language</h5>
                 <p>Basic markup language for web pages.</p>
@@ -72,7 +118,7 @@
 
         <!-- Slide 2: CSS -->
         <div class="carousel-item" data-bs-interval="2000">
-            <img src="../images/css.png" class="d-block" alt="css not found">
+            <img src="../images/css.png" class="d-block" width="100%" height="100%" alt="css not found">
             <div class="carousel-caption d-block text-warning">
                 <h5>CSS Language</h5>
                 <p>Style sheet language for web presentation.</p>
@@ -81,7 +127,7 @@
 
         <!-- Slide 3: JS -->
         <div class="carousel-item" data-bs-interval="2000">
-            <img src="../images/js.png" class="d-block" alt="js not found">
+            <img src="../images/js.png" class="d-block" width="100%" height="100%" alt="js not found">
             <div class="carousel-caption d-block text-warning">
                 <h5>JavaScript</h5>
                 <p>Programming language for dynamic content.</p>
@@ -90,7 +136,7 @@
 
         <!-- Slide 4: React -->
         <div class="carousel-item" data-bs-interval="2000">
-            <img src="../images/react.png" class="d-block" alt="react not found">
+            <img src="../images/react.png" class="d-block" width="100%" height="100%" alt="react not found">
             <div class="carousel-caption d-block text-warning">
                 <h5>React</h5>
                 <p>JavaScript library for building UIs.</p>
@@ -99,7 +145,7 @@
 
         <!-- Slide 5: PHP -->
         <div class="carousel-item" data-bs-interval="2000">
-            <img src="../images/php.png" class="d-block" alt="php not found">
+            <img src="../images/php.png" class="d-block" width="100%" height="100%" alt="php not found">
             <div class="carousel-caption d-block text-warning">
                 <h5>PHP Language</h5>
                 <p>Server-side scripting language.</p>
@@ -107,7 +153,7 @@
         </div>
         <!-- Slide 6: Vue.js -->
         <div class="carousel-item" data-bs-interval="2000">
-            <img src="../images/vue.png" class="d-block" alt="vue not found">
+            <img src="../images/vue.png" class="d-block" width="100%" height="100%" alt="vue not found">
             <div class="carousel-caption d-block text-warning">
                 <h5>Vue.js</h5>
                 <p>Progressive JavaScript framework.</p>
@@ -115,7 +161,7 @@
         </div>
         <!-- Slide 7: Angular -->
         <div class="carousel-item" data-bs-interval="2000">
-            <img src="../images/anglar.png" class="d-block" alt="angular not found">
+            <img src="../images/anglar.png" class="d-block" width="100%" height="100%" alt="angular not found">
             <div class="carousel-caption d-block text-warning">
                 <h5>Angular</h5>     
                 <p>Platform for building mobile and desktop web applications.</p>
@@ -123,7 +169,7 @@
         </div>
         <!-- Slide 8: tailwind css -->
         <div class="carousel-item" data-bs-interval="2000">
-            <img src="../images/tailwind.png" class="d-block" alt="php not found">
+            <img src="../images/tailwind.png" class="d-block" width="100%" height="100%" alt="php not found">
             <div class="carousel-caption d-block text-warning">
                 <h5>Tailwind CSS Language</h5>
                 <p>Tailwind css is a modern framework of css</p>
@@ -143,41 +189,41 @@
 </div>
       </div>
       <!-- running letter -->
-       <div class=" container-fluid mt-3 ">
+       <div class=" container-fluid mt-lg-3 mt-5 ">
                 <marquee behavior="0.01" direction="left" class="badge text-bg-dark">
                     <div class="d-flex justify-content-around align-items-center">
-                        <p class="mb-0">HTML</p>
-                        <p class="mb-0">CSS</p>
-                        <p class="mb-0">JavaScript</p>
-                        <p class="mb-0">React</p>
-                        <p class="mb-0">PHP</p>
-                        <p class="mb-0">Vue.js</p>
-                        <p class="mb-0">Angular</p>
-                        <p class="mb-0">Tailwind CSS</p>
-                        <p class="mb-0">Bootstrap</p>
-                        <p class="mb-0">Node.js</p>
-                        <p class="mb-0">Express.js</p>
-                        <p class="mb-0">MongoDB</p>
-                        <p class="mb-0">MySQL</p>
-                        <p class="mb-0">Python</p>
-                        <p class="mb-0">Django</p>
+                        <p class="mb-0 me-3">HTML</p>
+                        <p class="mb-0 me-3">CSS</p>
+                        <p class="mb-0 me-3">JavaScript</p>
+                        <p class="mb-0 me-3">React</p>
+                        <p class="mb-0 me-3">PHP</p>
+                        <p class="mb-0 me-3">Vue.js</p>
+                        <p class="mb-0 me-3">Angular</p>
+                        <p class="mb-0 me-3">Tailwind CSS</p>
+                        <p class="mb-0 me-3">Bootstrap</p>
+                        <p class="mb-0 me-3">Node.js</p>
+                        <p class="mb-0 me-3">Express.js</p>
+                        <p class="mb-0 me-3">MongoDB</p>
+                        <p class="mb-0 me-3">MySQL</p>
+                        <p class="mb-0 me-3">Python</p>
+                        <p class="mb-0 me-3">Django</p>
                     </div>
                 </marquee>
                 <marquee behavior="0.1" direction="right" class="badge text-bg-dark">
                     <div class="d-flex justify-content-around align-items-center">
-                        <p class="mb-0">DEV CPP</p>
-                        <p class="mb-0">PYCHARM</p>
-                        <p class="mb-0">NETBEANS</p>
-                        <p class="mb-0">ECLIPSE</p>
-                        <P class="mb-0">ATOM</P>
-                        <P class="mb-0">SUBLIME TEXT</P>
-                        <p class="mb-0">BRACKETS</p>
-                        <p class="mb-0">VSCODE</p>
-                        <p class="mb-0">VIM</p>
-                        <p class="mb-0">GIT</p>
-                        <p class="mb-0">GITHUB</p>
-                        <p class="mb-0">GITLAB</p>
-                        <p class="mb-0">BITBUCKET</p>
+                        <p class="mb-0 me-3">DEV CPP</p>
+                        <p class="mb-0 me-3">PYCHARM</p>
+                        <p class="mb-0 me-3">NETBEANS</p>
+                        <p class="mb-0 me-3">ECLIPSE</p>
+                        <P class="mb-0 me-3">ATOM</P>
+                        <P class="mb-0 me-3">SUBLIME TEXT</P>
+                        <p class="mb-0 me-3">BRACKETS</p>
+                        <p class="mb-0 me-3">VSCODE</p>
+                        <p class="mb-0 me-3">VIM</p>
+                        <p class="mb-0 me-3">GIT</p>
+                        <p class="mb-0 me-3">GITHUB</p>
+                        <p class="mb-0 me-3">GITLAB</p>
+                        <p class="mb-0 me-3">BITBUCKET</p>
                         
                     </div>
                 </marquee>
@@ -185,33 +231,40 @@
        <!-- card 3row 4columme -->
         <div class=" container">
             <h2 class="my-3 fs-4 text-center text-primary text-capitalize text-decoration-underline">course development skill</h2>
-            <div class="row">
+            <div  class="row">
                 
             </div>
         </div>
         <div class=" container">
-            <div class="row">
-                <div class="col-4">
-                    <div class=" card">
-                        <div class=" card-img-top overflow-hidden">
-                            <img src="" alt="not found" width="100%" height="100%" class=" object-fit-cover">
-                        </div>
-                        <div class=" card-body">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="my-3 fs-4 text-center text-primary text-capitalize text-decoration-underline">basic computer course</h2>
+            <div class="row" id="rows">
+                
             </div>
         </div>
+
+        <!-- developer motivation -->
+         <div class=" container">
+            <div class=" row my-3">
+                <h4 class=" text-info text-center text-capitalize fs-4 fw-semibold">developer motivation for students are studying IT</h4>
+               <div class=" p-2">
+                 <ol>
+                    <li>I study IT because I want to become a professional developer.</li>
+                    <li>I want to learn how to create useful websites and applications.</li>
+                    <li>Studying IT helps me improve my problem-solving and programming skills.</li>
+                    <li>I believe technology can give me many opportunities for my future career.</li>
+                    <li>My goal is to keep learning and become a successful developer.</li>
+                </ol>
+               </div>
+            </div>
+         </div>
  </div>
 
 <footer>
-    <div class="container bg-dark bg-opacity-50">
+    <div class="container-fluid bg-dark bg-opacity-50 ">
         <div class="row g-0">
 
             <div class="col-12">
-                <div class="d-flex justify-content-between px-5 py-4">
+                <div class="d-lg-flex justify-content-lg-between px-lg-5 py-lg-4 p-lg-0 p-3">
 
                     <div class="description-part">
                         <h3 class="text-capitalize">
@@ -240,7 +293,7 @@
 
                 </div>
             </div>
-            <p class=" text-danger fs-4 text-center fw-semibold text-decoration-underline">
+            <p class=" text-danger fs-lg-4 fs-6 text-center fw-semibold text-decoration-underline">
             &copy; 2026 PreyCode E-Learning. All Rights Reserved.
             </p>
         </div>
@@ -248,5 +301,10 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="../Backend_Javascript/Backend_js.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
