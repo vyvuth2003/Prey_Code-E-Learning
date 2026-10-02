@@ -114,7 +114,7 @@ async function mroFetch() {
                     <div class="card-body">
                         <h3 class="text-center fs-3 text-capitalize"></h3>
                         <p></p>
-                        <button class="btn btn-primary text-capitalize text-light fw-semibold mt-5 mb-0">visit course</button>
+                        <a href="" class="btn btn-primary text-capitalize text-light fw-semibold mt-5 mb-0">visit course</a>
                     </div>
                 </div>
             `;
